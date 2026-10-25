@@ -1,0 +1,44 @@
+{
+  "target_session": {
+    "description": "主动私聊发往的会话（平台ID:消息类型:会话ID）",
+    "type": "string",
+    "hint": "例如 mybot:FriendMessage:123456789。平台ID 在 AstrBot 平台设置里看，私聊用 FriendMessage，后面接对方 QQ 号。",
+    "default": ""
+  },
+  "bot_name": {
+    "description": "伴侣的名字",
+    "type": "string",
+    "hint": "它主动说话时扮演的名字，建议与你 Dashboard 里建的人格名一致。",
+    "default": "小蓝"
+  },
+  "day_start_hour": {
+    "description": "每天最早几点能主动发言",
+    "type": "int",
+    "hint": "24 小时制，例如 7 表示早上 7 点。",
+    "default": 7
+  },
+  "day_end_hour": {
+    "description": "每天最晚到几点（不跨过 24）",
+    "type": "int",
+    "hint": "24 小时制，24 表示到晚上 12 点。",
+    "default": 24
+  },
+  "send_per_day_min": {
+    "description": "每天最少主动几次",
+    "type": "int",
+    "hint": "与 send_per_day_max 一起构成随机区间。",
+    "default": 2
+  },
+  "send_per_day_max": {
+    "description": "每天最多主动几次",
+    "type": "int",
+    "hint": "控制别太频繁。",
+    "default": 4
+  },
+  "min_gap_minutes": {
+    "description": "两次主动之间最少间隔（分钟）",
+    "type": "int",
+    "hint": "避免连着发。默认 180 = 3 小时。",
+    "default": 180
+  }
+}
