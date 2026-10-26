@@ -1,7 +1,0 @@
-name: proactive_companion
-author: bluefish
-desc: 「小蓝」主动私聊陪伴插件 —— 每天在一个可配置时段内随机几次，用当前 LLM 以小蓝口吻主动私聊关心指定的人。支持 24 小时制时间感知，不会把中午说成晚上。
-version: 1.0.0
-repo: ""
-short_desc: 小蓝主动陪伴（通用版）
-display_name: 小蓝·主动陪伴
